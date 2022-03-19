@@ -9,35 +9,58 @@
   h2 {
     align-self: flex-start;
   }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 15px;
+}
+.madeFor__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  width: 100%;
+}
+.madeFor__gender {
+  width: 100%;
+  grid-column: span 3;
+  figure {
+    text-align: center;
+    position: relative;
     width: 100%;
-  }
-  a {
-    width: 100%;
-    grid-column: span 3;
-    figure {
-      text-align: center;
-      position: relative;
+    img {
       width: 100%;
-      img {
-        width: 100%;
-        max-height: 300px;
-        object-fit: cover;
-      }
+      max-height: 300px;
+      object-fit: cover;
+    }
 
-      figcaption {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        color: #ffffff;
-        font-size: 0.875rem;
-        font-weight: 500;
-        transform: translate(-50%, -50%);
+    figcaption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #ffffff;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @include large-tablet() {
+    height: 100%;
+    &:first-child {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+
+    &:nth-child(2) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    &:last-child {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    figure {
+      height: 100%;
+      img {
+        max-height: 350px;
+        height: 100%;
       }
     }
   }

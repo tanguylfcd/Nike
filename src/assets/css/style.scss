@@ -10,6 +10,12 @@
   }
 }
 
+@mixin laptop {
+  @media (min-width: 1500px) {
+    @content;
+  }
+}
+
 @import url(reset.scss);
 @import "./header.scss";
 @import "./lastNews.scss";
@@ -36,6 +42,9 @@ main {
   margin: 0 auto;
   @include large-tablet() {
     max-width: 992px;
-    margin: 0 auto;
+  }
+  @include laptop() {
+    padding: 30px;
+    max-width: 1400px;
   }
 }
