@@ -1,4 +1,4 @@
-.section_2 {
+.bestSales {
   margin: 40px 0 30px 0;
   > div {
     display: flex;
@@ -8,15 +8,19 @@
 
     h2 {
       align-self: flex-start;
-      margin-left: 15px;
     }
   }
-  .grille {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
+    gap: 30px;
     margin-top: 20px;
+    width: 100%;
+
+    @include tablet() {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     a {
       text-decoration: none;
@@ -27,11 +31,10 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      width: 170px;
-      margin-bottom: 10px;
+      width: 100%;
 
       img {
-        width: 170px;
+        width: 100%;
       }
 
       figcaption {

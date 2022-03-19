@@ -1,4 +1,4 @@
-.section_3 {
+.madeFor {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,27 +8,36 @@
 
   h2 {
     align-self: flex-start;
-    margin: 0 0 15px 20px;
   }
 
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+  }
   a {
-    width: 90%;
+    width: 100%;
+    grid-column: span 3;
     figure {
       text-align: center;
       position: relative;
-      margin: 5px 0;
-
+      width: 100%;
       img {
         width: 100%;
+        max-height: 300px;
+        object-fit: cover;
       }
 
       figcaption {
         position: absolute;
         top: 50%;
-        left: 40%;
+        left: 50%;
         color: #ffffff;
         font-size: 0.875rem;
         font-weight: 500;
+        transform: translate(-50%, -50%);
       }
     }
   }

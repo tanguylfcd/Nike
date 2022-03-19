@@ -1,9 +1,9 @@
-.section_1 {
+.lastNews {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 80px;
-
+  padding-top: 50px;
   div {
     margin-top: 40px;
 
@@ -11,10 +11,7 @@
       margin-bottom: 30px;
 
       img {
-        width: 90vw;
-        @media (min-width: 490px) {
-          width: 80vw;
-        }
+        width: 100%;
       }
 
       figcaption {

@@ -2,6 +2,10 @@
   background-color: #ffffff;
   height: 50px;
   border-bottom: solid 1px lightgrey;
+  position: fixed;
+  width: 100vw;
+  padding: 0 15px;
+  z-index: 11;
 
   .header__nav {
     height: 100%;
@@ -12,7 +16,6 @@
 
   .header__logo {
     height: 20px;
-    margin-left: 10px;
   }
 
   .header__nav {
@@ -20,9 +23,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-right: 10px;
       li {
         list-style-type: none;
+        margin: 0 2px;
+        padding: 0 2px;
         svg {
           height: 30px;
         }
@@ -36,32 +40,29 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-height: 90vh;
   height: 0px;
-  transition: 1s ease;
+  transition: 500ms ease;
   overflow: hidden;
-
+  position: fixed;
+  top: 50px;
+  background-color: white;
+  width: 100vw;
   nav {
-    height: 70vh;
     width: 70vw;
-
     ul {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items: center;
-      height: 100%;
       width: 100%;
     }
-
     li {
       list-style-type: none;
       font-size: 1.875rem;
+      margin: 10px;
     }
   }
-}
-
-.menu_open {
-  height: 90vh;
-  transition: 1s ease;
+  &--open {
+    height: 300px;
+  }
 }
