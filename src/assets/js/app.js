@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function () {
-  gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(ScrollTrigger);
 
   let burger = document.getElementById("burger");
   let menu = document.querySelector(".header__menu");
