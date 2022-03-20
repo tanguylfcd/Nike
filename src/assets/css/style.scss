@@ -25,6 +25,13 @@
 @import "./signIn.scss";
 @import "./footer.scss";
 
+@font-face {
+  font-family: "helveltica";
+  src: url("./../font/HelveticaNeue.ttc");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
