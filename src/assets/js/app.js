@@ -13,16 +13,16 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  sections = document.querySelectorAll(".sectionAnim");
-  sections.forEach((section) => {
-    gsap.from(section, {
-      y: 500,
-      scrollTrigger: {
-        trigger: section,
-        //markers: true,
-        start: "-500px 70%",
-        end: "-400px 60%",
-      },
-    });
-  });
+  //   sections = document.querySelectorAll(".sectionAnim");
+  //   sections.forEach((section) => {
+  //     gsap.from(section, {
+  //       y: 500,
+  //       scrollTrigger: {
+  //         trigger: section,
+  //         //markers: true,
+  //         start: "-500px 70%",
+  //         end: "-400px 60%",
+  //       },
+  //     });
+  //   });
 });
