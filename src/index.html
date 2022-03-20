@@ -6,6 +6,9 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="Projet front-end de fin d'année sur la mise en valeur d'un produit">
+   <meta property="og:title" content="Lafourcade Tanguy - Nike" />
+   <meta property="og:description" content="Petit projet front-end de fin d'année" />
+   <meta property="og:image" content="assets/img/nikeog.jpg" />
    <script defer src="assets/js/app.js"></script>
    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.scss">
    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
@@ -69,55 +72,61 @@
             <a href="https://www.nike.com/fr/t/chaussure-de-basketball-zion-1-2WjGPX/DA3130-401">Voir le produit</a>
          </div>
       </section>
-      <section class="bestSales">
+      <section class="bestSales sectionAnim">
          <div>
             <h2>Meilleures ventes</h2>
             <div class="bestSales__grid">
                <a href="https://www.nike.com/fr/t/chaussure-air-max-pre-day-lx-pour-zH6vHl/DC5330-301">
-                  <div class="nouveaute">
+                  <div class="bestSale">
                      <figure>
-                        <img loading="lazy" src="./assets/img/nike1.webp" alt="Air Max Pre-Day LX">
+                        <div class="saleContainer"><img loading="lazy" src="./assets/img/nike1.webp"
+                              alt="Air Max Pre-Day LX"></div>
                         <figcaption>Air Max Pre-Day LX</figcaption>
                      </figure>
                   </div>
                </a>
                <a href="https://www.nike.com/fr/t/chaussure-air-max-pre-day-pour-SgZvgd/DH4638-400">
-                  <div class="nouveaute">
+                  <div class="bestSale">
                      <figure>
-                        <img loading="lazy" src="./assets/img/nike2.webp" alt="Air Max Pre-Day">
+                        <div class="saleContainer"><img loading="lazy" src="./assets/img/nike2.webp"
+                              alt="Air Max Pre-Day"></div>
                         <figcaption>Air Max Pre-Day</figcaption>
                      </figure>
                   </div>
                </a>
                <a href="https://www.nike.com/fr/t/chaussure-air-jordan-11-cmft-low-pour-QpFwmh/CW0784-147">
-                  <div class="nouveaute">
+                  <div class="bestSale">
                      <figure>
-                        <img loading="lazy" src="./assets/img/nike3.webp" alt="Air Jordan 11 CMFT Low">
+                        <div class="saleContainer"><img loading="lazy" src="./assets/img/nike3.webp"
+                              alt="Air Jordan 11 CMFT Low"></div>
                         <figcaption>Air Jordan 11 CMFT Low
                         </figcaption>
                      </figure>
                   </div>
                </a>
                <a href="https://www.nike.com/fr/t/chaussure-air-force-1-07-wb-pour-p5KgrZ/CJ9179-200">
-                  <div class="nouveaute">
+                  <div class="bestSale">
                      <figure>
-                        <img loading="lazy" src="./assets/img/nike4.webp" alt="Air Force 1 '07 WB">
+                        <div class="saleContainer"><img loading="lazy" src="./assets/img/nike4.webp"
+                              alt="Air Force 1 '07 WB"></div>
                         <figcaption>Air Force 1 '07 WB</figcaption>
                      </figure>
                   </div>
                </a>
                <a href="https://www.nike.com/fr/t/chaussure-jordan-ma2-1lDRFl/CV8122-200">
-                  <div class="nouveaute">
+                  <div class="bestSale">
                      <figure>
-                        <img loading="lazy" src="./assets/img/nike5.webp" alt="Jordan MA2">
+                        <div class="saleContainer"><img loading="lazy" src="./assets/img/nike5.webp" alt="Jordan MA2">
+                        </div>
                         <figcaption>Jordan MA2</figcaption>
                      </figure>
                   </div>
                </a>
                <a href="https://www.nike.com/fr/t/chaussure-air-max-90-se-pour-l3qx4n/DC9336-300">
-                  <div class="nouveaute">
+                  <div class="bestSale">
                      <figure>
-                        <img loading="lazy" src="./assets/img/nike6.webp" alt="Air Max 90 SE">
+                        <div class="saleContainer"><img loading="lazy" src="./assets/img/nike6.webp"
+                              alt="Air Max 90 SE"></div>
                         <figcaption>Air Max 90 SE</figcaption>
                      </figure>
                   </div>
@@ -126,7 +135,7 @@
          </div>
       </section>
 
-      <section class="madeFor">
+      <section class="madeFor sectionAnim">
          <h2>Pour qui ?</h2>
          <div class="madeFor__grid">
             <a class="madeFor__gender" href="https://www.nike.com/fr/homme">
@@ -152,7 +161,7 @@
 
       </section>
 
-      <section class="airForce">
+      <section class="airForce sectionAnim">
          <div>
             <h2>Un peu de couleur ?</h2>
             <h3>Re-Découvrez la Air Force 1</h3>
@@ -208,7 +217,7 @@
             </div>
          </div>
       </section>
-      <section class="signIn">
+      <section class="signIn sectionAnim">
          <div>
             <figure class="signIn__picture">
                <picture>
@@ -302,6 +311,9 @@
          </div>
       </div>
    </footer>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
 </body>
 
 </html>

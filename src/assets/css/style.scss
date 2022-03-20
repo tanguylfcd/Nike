@@ -26,14 +26,14 @@
 @import "./footer.scss";
 
 @font-face {
-  font-family: "helveltica";
-  src: url("./../font/HelveticaNeue.ttc");
+  font-family: "lato";
+  src: url("./../font/Lato-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "lato";
+  font-family: "lato-black";
   src: url("./../font/Lato-Black.ttf");
   font-weight: normal;
   font-style: normal;
@@ -47,7 +47,7 @@
 
 body {
   line-height: 1.3;
-  font-family: helveltica;
+  font-family: lato;
 }
 
 main {
