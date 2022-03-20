@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Projet front-end de fin d'année sur la mise en valeur d'un produit">
    <script defer src="assets/js/app.js"></script>
    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.scss">
    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
@@ -14,11 +15,13 @@
 <body>
    <header class="header">
       <div class="header__nav">
-         <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2392 848">
-            <path
-               d="m342,0c0,0,-86,144,-86,275c0,140,103,217,233,217c146,0,242,-44,497,-111l1406,-371c0,0,-1192,517,-1762,753c-113,47,-219,85,-355,85c-150,0,-275,-90,-275,-240c0,-114,37,-199,99,-304c99,-168,243,-304,243,-304z" />
-         </svg>
-         <div class="header__menu">
+         <a class="header__logo" href="https://tanguylfcd-nike.netlify.app">
+            <p>logo nike</p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2392 848">
+               <path
+                  d="m342,0c0,0,-86,144,-86,275c0,140,103,217,233,217c146,0,242,-44,497,-111l1406,-371c0,0,-1192,517,-1762,753c-113,47,-219,85,-355,85c-150,0,-275,-90,-275,-240c0,-114,37,-199,99,-304c99,-168,243,-304,243,-304z" />
+            </svg>
+         </a>
+         <div class="header__menu nav__bottom">
             <nav>
                <ul>
                   <li> <a href="https://www.nike.com/fr/w/nouveau-3n82y">Nouveautés</a> </li>
@@ -29,7 +32,7 @@
                </ul>
             </nav>
          </div>
-         <nav class="header__nav">
+         <nav class="header__nav nav__top">
             <ul>
                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                      <path
@@ -52,7 +55,7 @@
    <main class="main">
       <section class="lastNews">
          <div>
-            <figure>
+            <figure class="lastNews__product">
                <picture>
                   <source srcset="./assets/img/jordan2.jpeg" media="(min-width: 1024px)">
                   <img src="./assets/img/jordan1.jpeg" alt="jordan zion 1">
@@ -69,11 +72,11 @@
       <section class="bestSales">
          <div>
             <h2>Meilleures ventes</h2>
-            <div class="grid">
+            <div class="bestSales__grid">
                <a href="https://www.nike.com/fr/t/chaussure-air-max-pre-day-lx-pour-zH6vHl/DC5330-301">
                   <div class="nouveaute">
                      <figure>
-                        <img src="./assets/img/nike1.webp" alt="">
+                        <img loading="lazy" src="./assets/img/nike1.webp" alt="Air Max Pre-Day LX">
                         <figcaption>Air Max Pre-Day LX</figcaption>
                      </figure>
                   </div>
@@ -81,7 +84,7 @@
                <a href="https://www.nike.com/fr/t/chaussure-air-max-pre-day-pour-SgZvgd/DH4638-400">
                   <div class="nouveaute">
                      <figure>
-                        <img src="./assets/img/nike2.webp" alt="">
+                        <img loading="lazy" src="./assets/img/nike2.webp" alt="Air Max Pre-Day">
                         <figcaption>Air Max Pre-Day</figcaption>
                      </figure>
                   </div>
@@ -89,7 +92,7 @@
                <a href="https://www.nike.com/fr/t/chaussure-air-jordan-11-cmft-low-pour-QpFwmh/CW0784-147">
                   <div class="nouveaute">
                      <figure>
-                        <img src="./assets/img/nike3.webp" alt="">
+                        <img loading="lazy" src="./assets/img/nike3.webp" alt="Air Jordan 11 CMFT Low">
                         <figcaption>Air Jordan 11 CMFT Low
                         </figcaption>
                      </figure>
@@ -98,7 +101,7 @@
                <a href="https://www.nike.com/fr/t/chaussure-air-force-1-07-wb-pour-p5KgrZ/CJ9179-200">
                   <div class="nouveaute">
                      <figure>
-                        <img src="./assets/img/nike4.webp" alt="">
+                        <img loading="lazy" src="./assets/img/nike4.webp" alt="Air Force 1 '07 WB">
                         <figcaption>Air Force 1 '07 WB</figcaption>
                      </figure>
                   </div>
@@ -106,7 +109,7 @@
                <a href="https://www.nike.com/fr/t/chaussure-jordan-ma2-1lDRFl/CV8122-200">
                   <div class="nouveaute">
                      <figure>
-                        <img src="./assets/img/nike5.webp" alt="">
+                        <img loading="lazy" src="./assets/img/nike5.webp" alt="Jordan MA2">
                         <figcaption>Jordan MA2</figcaption>
                      </figure>
                   </div>
@@ -114,7 +117,7 @@
                <a href="https://www.nike.com/fr/t/chaussure-air-max-90-se-pour-l3qx4n/DC9336-300">
                   <div class="nouveaute">
                      <figure>
-                        <img src="./assets/img/nike6.webp" alt="">
+                        <img loading="lazy" src="./assets/img/nike6.webp" alt="Air Max 90 SE">
                         <figcaption>Air Max 90 SE</figcaption>
                      </figure>
                   </div>
@@ -128,19 +131,19 @@
          <div class="madeFor__grid">
             <a class="madeFor__gender" href="https://www.nike.com/fr/homme">
                <figure>
-                  <img src="./assets/img/homme1.webp" alt="">
+                  <img loading="lazy" src="./assets/img/hommes.webp" alt="hommes">
                   <figcaption>HOMMES</figcaption>
                </figure>
             </a>
             <a class="madeFor__gender" href="https://www.nike.com/fr/femme">
                <figure>
-                  <img src="./assets/img/femme1.webp" alt="">
+                  <img loading="lazy" src="./assets/img/femmes.webp" alt="femmes">
                   <figcaption>FEMMES</figcaption>
                </figure>
             </a>
             <a class="madeFor__gender" href="https://www.nike.com/fr/enfant">
                <figure>
-                  <img src="./assets/img/enfant1.webp" alt="">
+                  <img loading="lazy" src="./assets/img/enfants.webp" alt="enfants">
                   <figcaption>ENFANTS</figcaption>
                </figure>
             </a>
@@ -157,7 +160,7 @@
                <a href="https://www.nike.com/t/air-force-1-07-lv8-mens-shoes-TPzVZp/DR0147-171" target="_blank">
                   <div class="couleur">
                      <figure>
-                        <img src="./assets/img/af1.webp" alt="">
+                        <img loading="lazy" src="./assets/img/af1.webp" alt="Air Force 1 Nectarine">
                         <figcaption>Nectarine</figcaption>
                      </figure>
                   </div>
@@ -165,7 +168,7 @@
                <a href="https://www.nike.com/t/air-force-1-07-skeleton-mens-shoe-5BSsVh/CU8067-500">
                   <div class="couleur">
                      <figure>
-                        <img src="./assets/img/af2.webp" alt="">
+                        <img loading="lazy" src="./assets/img/af2.webp" alt="Air Force 1 Glycine">
                         <figcaption>Glycine</figcaption>
                      </figure>
                   </div>
@@ -173,7 +176,7 @@
                <a href="https://www.nike.com/fr/u/custom-nike-air-force-1-unlocked-by-you-10001230/4046303135">
                   <div class="couleur">
                      <figure>
-                        <img src="./assets/img/af3.webp" alt="">
+                        <img loading="lazy" src="./assets/img/af3.webp" alt="Air Force 1 Brume">
                         <figcaption>Brume</figcaption>
                      </figure>
                   </div>
@@ -181,7 +184,7 @@
                <a href="https://www.nike.com/u/custom-nike-air-force-1-low-cozi-custom-shoe-10001134/2205955876">
                   <div class="couleur">
                      <figure>
-                        <img src="./assets/img/af4.webp" alt="">
+                        <img loading="lazy" src="./assets/img/af4.webp" alt="Air Force 1 Abysse">
                         <figcaption>Abysse</figcaption>
                      </figure>
                   </div>
@@ -189,7 +192,7 @@
                <a href="https://www.nike.com/u/custom-nike-air-force-1-low-by-you-shoe-10001217/5784959333">
                   <div class="couleur">
                      <figure>
-                        <img src="./assets/img/af5.webp" alt="">
+                        <img loading="lazy" src="./assets/img/af5.webp" alt="Air Force 1 Zeste de citron">
                         <figcaption>Zeste de citron</figcaption>
                      </figure>
                   </div>
@@ -197,7 +200,7 @@
                <a href="https://www.nike.com/fr/u/custom-nike-air-force-1-unlocked-by-you-10001230/2995822189">
                   <div class="couleur">
                      <figure>
-                        <img src="./assets/img/af6.webp" alt="">
+                        <img loading="lazy" src="./assets/img/af6.webp" alt="Air Force 1 Sanguine">
                         <figcaption>Sanguine</figcaption>
                      </figure>
                   </div>
@@ -207,10 +210,10 @@
       </section>
       <section class="signIn">
          <div>
-            <figure>
+            <figure class="signIn__picture">
                <picture>
                   <source srcset="./assets/img/members2.webp" media="(min-width: 720px)">
-                  <img src="./assets/img/members1.webp" alt="where all athletes belong">
+                  <img loading="lazy" src="./assets/img/members1.webp" alt="where all athletes belong">
                </picture>
                <figcaption>
                   Les choses vont mieux en tant que membre Nike. Bénéficiez d'un accès prioritaire et exclusif aux
@@ -218,7 +221,7 @@
                   encore.
                </figcaption>
             </figure>
-            <div>
+            <div class="signIn__buttons">
                <a href="https://www.nike.com/fr/login">Se connecter</a>
                <a href="https://www.nike.com/fr/register">S'inscrire</a>
             </div>
@@ -228,7 +231,7 @@
 
    </main>
    <footer class="footer">
-      <div class="grid">
+      <div class="footer__grid">
          <div>
             <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 335 125.2"

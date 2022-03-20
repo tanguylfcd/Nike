@@ -6,13 +6,14 @@
     align-items: center;
     flex-direction: column;
 
-    h2,
-    h3 {
+    h2 {
       align-self: flex-start;
+      font-size: 1.375rem;
     }
 
     h3 {
-      font-size: 0.9375rem;
+      align-self: flex-start;
+      font-size: 14px;
       font-weight: 400;
       margin-top: 5px;
     }
@@ -42,6 +43,7 @@
 
       img {
         width: 100%;
+        height: 100%;
       }
       figcaption {
         align-self: flex-start;

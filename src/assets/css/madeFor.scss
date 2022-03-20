@@ -8,9 +8,11 @@
 
   h2 {
     align-self: flex-start;
+    font-size: 1.375rem;
   }
 }
 .madeFor__grid {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -26,6 +28,7 @@
     width: 100%;
     img {
       width: 100%;
+      height: 100%;
       max-height: 300px;
       object-fit: cover;
     }
@@ -35,7 +38,9 @@
       top: 50%;
       left: 50%;
       color: #ffffff;
-      font-size: 0.875rem;
+      font-size: 18px;
+      letter-spacing: 1.2px;
+      font-family: lato;
       font-weight: 500;
       transform: translate(-50%, -50%);
     }
@@ -61,6 +66,7 @@
       img {
         max-height: 350px;
         height: 100%;
+        width: 100%;
       }
     }
   }

@@ -7,34 +7,35 @@
   div {
     margin-top: 40px;
 
-    figure {
-      margin-bottom: 30px;
-
-      img {
-        width: 100%;
-      }
-
-      figcaption {
-        margin-top: 17px;
-
-        p:first-child {
-          font-size: 1rem;
-          margin-bottom: 5px;
-        }
-
-        p:last-child {
-          font-size: 2.1875rem;
-          font-weight: 800;
-        }
-      }
-    }
-
     a {
       padding: 10px 20px;
       background-color: #1b1b1b;
       border-radius: 20px;
       color: #ffffff;
       text-decoration: none;
+    }
+  }
+}
+
+.lastNews__product {
+  margin-bottom: 30px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  figcaption {
+    margin-top: 17px;
+
+    p:first-child {
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+
+    p:last-child {
+      font-size: 2.1875rem;
+      font-family: lato;
     }
   }
 }
